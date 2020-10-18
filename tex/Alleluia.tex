@@ -1,0 +1,57 @@
+% !TEX TS-program = LuaLaTex+se
+
+\documentclass[12pt, a4paper]{article}
+
+\usepackage[autocompile,allowdeprecated=false]{gregoriotex}
+\usepackage[compact]{titlesec}
+\usepackage{graphicx}
+
+\usepackage{romande}
+\usepackage[T1]{fontenc}
+\usepackage{fontspec}
+\input Nouveaud.fd
+\newcommand*\initfamily{\usefont{U}{Nouveaud}{xl}{n}}
+
+% choose the language of the document here
+\usepackage[latin]{babel}
+
+
+%%% This function is used at the end of a function which inserts text.  It checks to see if a space should be included at the end of the command, suppressing it if the command is immediately followed by a punctuation character but including it otherwise.
+\makeatletter
+\newcommand{\punctuationcheck}{%
+	\@ifnextchar){\relax}{%
+	\@ifnextchar]{\relax}{%
+	\@ifnextchar.{\relax}{%
+	\@ifnextchar,{\relax}{%
+	\@ifnextchar’{\relax}{\ }}}}}%
+}
+\makeatother
+
+% tune distances
+\grechangedim{afterinitialshift}{2.2mm}{scalable}
+\grechangedim{beforeinitialshift}{2.2mm}{scalable}
+\grechangedim{annotationraise}{8pt}{scalable}
+\setmainfont{coelacanth}
+% format the initial
+\grechangestyle{initial}{\initfamily\fontsize{50}{33}\selectfont}
+% select the font for the music and tune the glyphs
+
+% prevents linebreaks mid-word
+\xdef\greendofsyllablepenalty{10000}
+% red staff lines
+\gresetlinecolor{gregoriocolor}
+
+% For getting rid of the images in black and white printing
+
+\begin{document}
+
+\begin{center}
+	\begin{huge}
+		\textsc{Alleluia}
+	\end{huge}
+\end{center}
+
+\gresetlastline{justified}
+\gregorioscore{scores/Alleluia}
+
+\end{document}
