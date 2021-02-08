@@ -1,0 +1,103 @@
+% !TEX TS-program = LuaLaTex+se
+
+\documentclass[12pt]{report}
+
+\usepackage[autocompile,allowdeprecated=false]{gregoriotex} % for gregorio score inclusion
+\usepackage{ulem}
+\usepackage[compact]{titlesec}
+
+\usepackage{romande}
+\usepackage[T1]{fontenc}
+\input Nouveaud.fd
+\newcommand*\initfamily{\usefont{U}{Nouveaud}{xl}{n}}
+
+% choose the language of the document here
+\usepackage[latin]{babel}
+
+\usepackage[print,1to1]{booklet}
+\pagespersignature{16}
+\source{\magstep0}{5.5in}{8.5in}
+\target{\magstep0}{11in}{8.5in}
+\setpdftargetpages
+
+%%% Setting up the paper size and margins.
+\setlength{\hoffset}{-0.5in}
+\setlength{\voffset}{-0.75in}
+\setlength{\oddsidemargin}{0in}
+\setlength{\evensidemargin}{0in}
+\setlength{\topmargin}{0in}
+\setlength{\headheight}{0.125in}
+\setlength{\headsep}{0.25in}
+\setlength{\textheight}{7in}
+\setlength{\textwidth}{4.5in}
+\setlength{\footskip}{0.5in}
+\setlength{\marginparwidth}{0.9in}
+
+\titleformat{\chapter}[block]
+	{\centering\Large\bfseries}{}{0pt}{}
+\titleformat{\section}[block]
+	{\centering\large\bfseries}{}{0pt}{}
+
+\pagestyle{empty}
+
+\gredefsizedsymbol{VBar}{greextra}{VBar}
+\gredefbarredsymbol{Vbarblack}{V}{VBar}{14}{0.17em}{-0.05em}
+\def\Vbar{{\color{gregoriocolor}\Vbarblack.}}
+\xdef\greendofsyllablepenalty{10000}
+\gresetlinecolor{gregoriocolor}
+\gresethyphen{force}
+
+\def\notice{%
+\enlargethispage{0.5in}
+\begin{center}\footnotesize
+\ifblackandwhite\else%
+\tiny Artwork by Fr.~Stephen Reid, OSB, \copyright~1989 St.~Anselm's Abbey
+\fi
+\end{center}
+}
+
+\def\move{{\color{gregoriocolor}\rule[-0.2em]{0.4pt}{1em}\,}}
+
+%temporary formatting for black & white printing
+\newif\ifblackandwhite
+\blackandwhitefalse
+\ifblackandwhite
+	\colorlet{gregoriocolor}{black}
+\fi
+
+\begin{document}
+%{\hfill\LARGE Magnificat}%
+%\hspace{1in}%
+%\includegraphics[width=\textheight,angle=270,origin=cb]{Images/Door_sign_(Shrine_of_the_Blessed_Mother)}
+
+\ifblackandwhite
+	\begin{center}
+	\hbox{}
+	\vfill\vfill
+	\begin{Large}Magnificat\end{Large}
+	\vfill
+	ab Antiphionis Majoribus
+	\vfill
+	\vfill\vfill
+	\end{center}
+\else
+	\begin{center}
+	\includegraphics[width=\textwidth]{Images/Door_sign_(Shrine_of_the_Blessed_Mother)}
+	\vfill
+	ab Antiphionis Majoribus
+	\vfill
+	\includegraphics[width=0.5\textwidth]{Images/Visitation_(Red_and_Blue_Haloes)}
+	\vfill\vfill
+	\notice
+	\end{center}
+\fi
+
+
+%\section*{Magnificat}
+\pagebreak
+\hbox{}
+\gregorioscore{Scores/Magnificat}
+
+\vfill
+\notice
+\end{document}

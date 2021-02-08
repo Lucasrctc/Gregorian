@@ -1,0 +1,931 @@
+This is LuaTeX, Version 1.10.0 (TeX Live 2019/Debian)  (format=lualatex 2020.10.1)  18 OCT 2020 17:02
+ system commands enabled.
+**tex/small-mass-parts.tex
+(./tex/small-mass-parts.tex
+LaTeX2e <2020-02-02> patch level 2
+Lua module: luaotfload-main 2020-02-02 3.12 luaotfload entry point
+Lua module: luaotfload-init 2020-02-02 3.12 luaotfload submodule / initializatio
+n
+Lua module: lualibs 2020-02-02 2.70 ConTeXt Lua standard libraries.
+Lua module: lualibs-extended 2020-02-02 2.70 ConTeXt Lua libraries -- extended c
+ollection.
+Lua module: luaotfload-log 2020-02-02 3.12 luaotfload submodule / logging
+Lua module: luaotfload-parsers 2020-02-02 3.12 luaotfload submodule / filelist
+Lua module: luaotfload-configuration 2020-02-02 3.12 luaotfload submodule / conf
+ig file reader
+luaotfload | conf : Root cache directory is /home/lucas/.texlive2019/texmf-var/l
+uatex-cache/generic-dev/names.
+luaotfload | init : Loading fontloader “fontloader-2020-01-26.lua” from kpse
+-resolved path “/usr/share/texlive/texmf-dist/tex/luatex/luaotfload/fontloader
+-2020-01-26.lua”.
+Lua-only attribute luaotfload@state = 2
+Lua-only attribute luaotfload@noligature = 3
+Lua-only attribute luaotfload@syllabe = 4
+luaotfload | init : Context OpenType loader version “3.11”
+Inserting `luaotfload.node_processor' at position 1 in `pre_linebreak_filter'.
+Inserting `luaotfload.node_processor' at position 1 in `hpack_filter'.
+Lua module: luaotfload-loaders 2020-02-02 3.12 luaotfload submodule / callback h
+andling
+Inserting `luaotfload.define_font' at position 1 in `define_font'.
+Lua module: luaotfload-database 2020-02-02 3.12 luaotfload submodule / database
+Lua module: luaotfload-unicode 2020-02-02 3.12 luaotfload submodule / Unicode he
+lpers
+Lua module: luaotfload-colors 2020-02-02 3.12 luaotfload submodule / color
+Lua-only attribute luaotfload_color_attribute = 5
+Lua module: luaotfload-resolvers 2020-02-02 3.12 luaotfload submodule / resolver
+s
+luaotfload | conf : Root cache directory is /home/lucas/.texlive2019/texmf-var/l
+uatex-cache/generic-dev/names.
+Lua module: luaotfload-features 2020-02-02 3.12 luaotfload submodule / features
+Lua module: luaotfload-letterspace 2020-02-02 3.12 luaotfload submodule / color
+Lua module: luaotfload-embolden 2020-02-02 3.12 luaotfload submodule / color
+Lua module: luaotfload-notdef 2020-02-02 3.12 luaotfload submodule / color
+Lua module: luaotfload-auxiliary 2020-02-02 3.12 luaotfload submodule / auxiliar
+y functions
+Inserting `luaotfload.aux.set_sscale_dimens' at position 1 in `luaotfload.patch_
+font'.
+Inserting `luaotfload.aux.set_font_index' at position 2 in `luaotfload.patch_fon
+t'.
+Inserting `luaotfload.aux.patch_cambria_domh' at position 3 in `luaotfload.patch
+_font'.
+Inserting `luaotfload.aux.fixup_fontdata' at position 1 in `luaotfload.patch_fon
+t_unsafe'.
+Inserting `luaotfload.aux.set_capheight' at position 4 in `luaotfload.patch_font
+'.
+Inserting `luaotfload.aux.set_xheight' at position 5 in `luaotfload.patch_font'.
+Lua module: luaotfload-fallback 2020-02-02 3.12 luaotfload submodule / fallback
+Lua module: luaotfload-multiscript 2020-02-02 3.12 luaotfload submodule / multis
+cript
+Lua module: luaotfload-script 2020-02-02 3.12 luaotfload submodule / Script help
+ers
+Lua module: luaotfload-tounicode 2020-02-02 3.12 luaotfload submodule / tounicod
+e
+Inserting `luaotfload.rewrite_fontname' at position 6 in `luaotfload.patch_font'
+. L3 programming layer <2020-02-14>
+(/usr/share/texlive/texmf-dist/tex/latex/base/article.cls
+Document Class: article 2019/12/20 v1.4l Standard LaTeX document class
+(/usr/share/texlive/texmf-dist/tex/latex/base/size12.clo
+File: size12.clo 2019/12/20 v1.4l Standard LaTeX file (size option)
+luaotfload | db : Font names database loaded from /home/lucas/.texlive2019/texmf
+-var/luatex-cache/generic-dev/names/luaotfload-names.luc)
+\c@part=\count163
+\c@section=\count164
+\c@subsection=\count165
+\c@subsubsection=\count166
+\c@paragraph=\count167
+\c@subparagraph=\count168
+\c@figure=\count169
+\c@table=\count170
+\abovecaptionskip=\skip47
+\belowcaptionskip=\skip48
+\bibindent=\dimen134
+)
+(/usr/share/texlive/texmf-dist/tex/latex/geometry/geometry.sty
+Package: geometry 2020/01/02 v5.9 Page Geometry
+
+(/usr/share/texlive/texmf-dist/tex/latex/graphics/keyval.sty
+Package: keyval 2014/10/28 v1.15 key=value parser (DPC)
+\KV@toks@=\toks14
+)
+(/usr/share/texlive/texmf-dist/tex/generic/iftex/ifvtex.sty
+Package: ifvtex 2019/10/25 v1.7 ifvtex legacy package. Use iftex instead.
+
+(/usr/share/texlive/texmf-dist/tex/generic/iftex/iftex.sty
+Package: iftex 2019/11/07 v1.0c TeX engine tests
+))
+\Gm@cnth=\count171
+\Gm@cntv=\count172
+\c@Gm@tempcnt=\count173
+\Gm@bindingoffset=\dimen135
+\Gm@wd@mp=\dimen136
+\Gm@odd@mp=\dimen137
+\Gm@even@mp=\dimen138
+\Gm@layoutwidth=\dimen139
+\Gm@layoutheight=\dimen140
+\Gm@layouthoffset=\dimen141
+\Gm@layoutvoffset=\dimen142
+\Gm@dimlist=\toks15
+)
+(/usr/share/texlive/texmf-dist/tex/latex/tools/layout.sty
+Package: layout 2014/10/28 v1.2c Show layout parameters
+\oneinch=\count174
+\cnt@paperwidth=\count175
+\cnt@paperheight=\count176
+\cnt@hoffset=\count177
+\cnt@voffset=\count178
+\cnt@textheight=\count179
+\cnt@textwidth=\count180
+\cnt@topmargin=\count181
+\cnt@oddsidemargin=\count182
+\cnt@evensidemargin=\count183
+\cnt@headheight=\count184
+\cnt@headsep=\count185
+\cnt@marginparsep=\count186
+\cnt@marginparwidth=\count187
+\cnt@marginparpush=\count188
+\cnt@footskip=\count189
+\fheight=\count190
+\ref@top=\count191
+\ref@hoffset=\count192
+\ref@voffset=\count193
+\ref@head=\count194
+\ref@body=\count195
+\ref@foot=\count196
+\ref@margin=\count197
+\ref@marginwidth=\count198
+\ref@marginpar=\count199
+\Interval=\count266
+\ExtraYPos=\count267
+\PositionX=\count268
+\PositionY=\count269
+\ArrowLength=\count270
+)
+(/usr/share/texlive/texmf-dist/tex/lualatex/gregoriotex/gregoriotex.sty
+Package: gregoriotex 2019/04/06 v5.2.1 GregorioTeX system.
+
+(/usr/share/texlive/texmf-dist/tex/latex/xcolor/xcolor.sty
+Package: xcolor 2016/05/11 v2.12 LaTeX color extensions (UK)
+
+(/usr/share/texlive/texmf-dist/tex/latex/graphics-cfg/color.cfg
+File: color.cfg 2016/01/02 v1.6 sample color configuration
+)
+Package xcolor Info: Driver file: luatex.def on input line 225.
+
+(/usr/share/texlive/texmf-dist/tex/latex/graphics-def/luatex.def
+File: luatex.def 2018/01/08 v1.0l Graphics/color driver for luatex
+)
+Package xcolor Info: Model `cmy' substituted by `cmy0' on input line 1348.
+Package xcolor Info: Model `hsb' substituted by `rgb' on input line 1352.
+Package xcolor Info: Model `RGB' extended on input line 1364.
+Package xcolor Info: Model `HTML' substituted by `rgb' on input line 1366.
+Package xcolor Info: Model `Hsb' substituted by `hsb' on input line 1367.
+Package xcolor Info: Model `tHsb' substituted by `hsb' on input line 1368.
+Package xcolor Info: Model `HSB' substituted by `hsb' on input line 1369.
+Package xcolor Info: Model `Gray' substituted by `gray' on input line 1370.
+Package xcolor Info: Model `wave' substituted by `hsb' on input line 1371.
+)
+(/usr/share/texlive/texmf-dist/tex/latex/kvoptions/kvoptions.sty
+Package: kvoptions 2019/11/29 v3.13 Key value format for package options (HO)
+
+(/usr/share/texlive/texmf-dist/tex/generic/ltxcmds/ltxcmds.sty
+Package: ltxcmds 2019/12/15 v1.24 LaTeX kernel commands for general use (HO)
+)
+(/usr/share/texlive/texmf-dist/tex/generic/kvsetkeys/kvsetkeys.sty
+Package: kvsetkeys 2019/12/15 v1.18 Key value parser (HO)
+))
+(/usr/share/texlive/texmf-dist/tex/generic/iftex/ifluatex.sty
+Package: ifluatex 2019/10/25 v1.5 ifluatex legacy package. Use iftex instead.
+)
+(/usr/share/texlive/texmf-dist/tex/latex/graphics/graphicx.sty
+Package: graphicx 2019/11/30 v1.2a Enhanced LaTeX Graphics (DPC,SPQR)
+
+(/usr/share/texlive/texmf-dist/tex/latex/graphics/graphics.sty
+Package: graphics 2019/11/30 v1.4a Standard LaTeX Graphics (DPC,SPQR)
+
+(/usr/share/texlive/texmf-dist/tex/latex/graphics/trig.sty
+Package: trig 2016/01/03 v1.10 sin cos tan (DPC)
+)
+(/usr/share/texlive/texmf-dist/tex/latex/graphics-cfg/graphics.cfg
+File: graphics.cfg 2016/06/04 v1.11 sample graphics configuration
+)
+Package graphics Info: Driver file: luatex.def on input line 105.
+)
+\Gin@req@height=\dimen143
+\Gin@req@width=\dimen144
+)
+(/usr/share/texlive/texmf-dist/tex/luatex/luatexbase/luatexbase.sty
+Package: luatexbase 2015/10/04 v1.3 luatexbase interface to LuaTeX 
+
+(/usr/share/texlive/texmf-dist/tex/luatex/ctablestack/ctablestack.sty
+Package: ctablestack 2015/10/01 v1.0 Catcode table stable support
+\@catcodetablestackcnt=\count271
+)
+\CatcodeTableOther=\catcodetable5
+\CatcodeTableExpl=\catcodetable6
+)
+(/usr/share/texlive/texmf-dist/tex/luatex/luamplib/luamplib.sty
+Package: luamplib 2019/12/11 v2.20.4 mplib package for LuaTeX
+Lua module: luamplib 2019/12/11 2.20.4 Lua package to typeset Metapost with LuaT
+eX's MPLib.
+\mplibtmptoks=\toks16
+\everymplibtoks=\toks17
+\everyendmplibtoks=\toks18
+\mplibscratchbox=\box45
+)
+(/usr/share/texlive/texmf-dist/tex/generic/xstring/xstring.sty
+(/usr/share/texlive/texmf-dist/tex/generic/xstring/xstring.tex
+\integerpart=\count272
+\decimalpart=\count273
+)
+Package: xstring 2019/02/06 v1.83 String manipulations (CT)
+)
+(/usr/share/texlive/texmf-dist/tex/luatex/gregoriotex/gregoriotex-main.tex
+(/usr/share/texlive/texmf-dist/tex/luatex/gregoriotex/gregoriotex-common.tex)
+\gre@attr@dash=\attribute6
+\gre@attr@center=\attribute7
+\GreScoreId=\attribute8
+\gre@attr@glyph@id=\attribute9
+\gre@attr@glyph@top=\attribute10
+\gre@attr@glyph@bottom=\attribute11
+\gre@attr@syllable@id=\attribute12
+\gre@atletter=\catcodetable7
+Lua module: gregoriotex 2019/04/06 5.2.1 GregorioTeX module.
+Custom whatsit marker = 1
+Module gregoriotex Info: marker whatsit id is 1 on input line 131
+
+(small-mass-parts.gaux)
+Module gregoriotex Info: Reading small-mass-parts.gaux on input line 135
+Inserting `gregoriotex.write_greaux' at position 1 in `finish_pdffile'.
+\gre@gaux=\write3
+\gre@read@temp=\read2
+\gre@factor=\count274
+
+(/usr/share/texlive/texmf-dist/tex/luatex/gregoriotex/gregoriotex-spaces.tex
+\gre@hyphenpenaltysave=\count275
+\gre@exhyphenpenaltysave=\count276
+\gre@doublehyphendemeritssave=\count277
+\gre@finalhyphendemeritssave=\count278
+\gre@brokenpenaltysave=\count279
+\gre@loosenesssave=\count280
+\gre@tolerancesave=\count281
+\gre@pretolerancesave=\count282
+\gre@emergencystretchsave=\skip49
+\gre@widowpenaltysave=\count283
+\gre@clubpenaltysave=\count284
+\gre@saved@parskip=\skip50
+\gre@saved@lineskip=\skip51
+\gre@saved@baselineskip=\skip52
+\gre@saved@lineskiplimit=\skip53
+\gre@dimen@textlower=\dimen145
+\gre@dimen@stafflinewidth=\dimen146
+\gre@dimen@linewidth=\dimen147
+\gre@dimen@stafflineheight=\dimen148
+\gre@dimen@interstafflinespace=\dimen149
+\gre@dimen@stafflinediff=\dimen150
+\gre@dimen@constantglyphraise=\dimen151
+\gre@dimen@staffheight=\dimen152
+\gre@skip@syllablefinalskip=\skip54
+\gre@skip@minTextDistance=\skip55
+\gre@skip@minNotesDistance=\skip56
+\gre@dimen@curTextDistance=\dimen153
+\gre@dimen@curNotesDistance=\dimen154
+\gre@skip@minShiftText=\skip57
+\gre@skip@minShiftNotes=\skip58
+\gre@dimen@bolshift=\dimen155
+\gre@dimen@bolextra=\dimen156
+\gre@dimen@clefwidth@current=\dimen157
+\gre@dimen@clefwidth@largest=\dimen158
+\gre@dimen@clefwidth@bol=\dimen159
+\gre@dimen@eolshift=\dimen160
+\gre@dimen@glyphraisevalue=\dimen161
+\gre@dimen@additionalbottomspace=\dimen162
+\gre@dimen@additionaltopspace=\dimen163
+\gre@dimen@additionaltopspacealt=\dimen164
+\gre@dimen@additionaltopspacenabc=\dimen165
+\gre@saved@dimen@additionalbottomspace=\dimen166
+\gre@saved@dimen@additionaltopspace=\dimen167
+\gre@saved@dimen@additionaltopspacealt=\dimen168
+\gre@saved@dimen@additionaltopspacenabc=\dimen169
+\gre@saved@dimen@currenttranslationheight=\dimen170
+\gre@saved@dimen@textlower=\dimen171
+\gre@saved@dimen@currentabovelinestextheight=\dimen172
+\gre@saved@dimen@constantglyphraise=\dimen173
+\gre@space@count@additionaltopspacethreshold=\count285
+\gre@space@count@additionaltopspacealtthreshold=\count286
+\gre@space@count@additionaltopspacenabcthreshold=\count287
+\gre@space@count@noteadditionalspacelinestextthreshold=\count288
+\gre@dimen@textaligncenter=\dimen174
+\gre@dimen@enddifference=\dimen175
+\gre@dimen@previousenddifference=\dimen176
+\gre@dimen@currenttranslationheight=\dimen177
+\gre@skip@nextbegindifference=\skip59
+\gre@dimen@annotationtrueraise=\dimen178
+\gre@dimen@commentarytrueraise=\dimen179
+\gre@skip@bar@requirement=\skip60
+\gre@skip@bar@allocation=\skip61
+\gre@dimen@bar@shift=\dimen180
+\gre@skip@text@requirement=\skip62
+\gre@skip@text@allocation=\skip63
+\gre@dimen@text@shift=\dimen181
+\gre@dimen@adjustedpreviousenddifference=\dimen182
+\gre@skip@adjustednextbegindifference=\dimen183
+\gre@skip@punctummorashift=\skip64
+\gre@skip@alterationshift=\skip65
+\gre@dimen@begindifference=\dimen184
+\gre@dimen@lastglyphwidth=\dimen185
+\gre@dimen@notesaligncenter=\dimen186
+\gre@dimen@additionalleftspace=\dimen187
+\gre@dimen@initialwidth=\dimen188
+\gre@dimen@currentabovelinestextheight=\dimen189
+\gre@dimen@temp@one=\dimen190
+\gre@dimen@temp@two=\dimen191
+\gre@dimen@temp@three=\dimen192
+\gre@dimen@temp@four=\dimen193
+\gre@dimen@temp@five=\dimen194
+\gre@skip@temp@one=\skip66
+\gre@skip@temp@two=\skip67
+\gre@skip@temp@three=\skip68
+\gre@skip@temp@four=\skip69
+\gre@count@temp@one=\count289
+\gre@count@temp@two=\count290
+\gre@count@temp@three=\count291
+\gre@space@count@newlinepenalty=\count292
+\gre@space@count@nobreakpenalty=\count293
+\gre@space@count@endofwordpenalty=\count294
+\gre@space@count@endofsyllablepenalty=\count295
+\gre@space@count@endafterbarpenalty=\count296
+\gre@space@count@endafterbaraltpenalty=\count297
+\gre@space@count@finalpenalty=\count298
+\gre@space@count@endofelementpenalty=\count299
+\gre@space@count@hyphenpenalty=\count300
+\gre@space@count@brokenpenalty=\count301
+\gre@space@count@looseness=\count302
+\gre@space@count@tolerance=\count303
+\gre@space@count@pretolerance=\count304
+\gre@space@count@widowpenalty=\count305
+\gre@space@count@clubpenalty=\count306
+\greconffactor=\count307
+)
+\gre@box@temp@width=\box46
+\gre@box@initial=\box47
+\gre@biginitial=\count308
+\gre@knownline=\count309
+\gre@box@annotation=\box48
+\gre@box@add=\box49
+\gre@box@old=\box50
+\gre@count@annotationvalign=\count310
+\gre@box@commentary=\box51
+\gre@box@lines=\box52
+Module gregoriotex Info: Registering variant font greciliae as gre@font@variant@
+A. on input line 993
+Module gregoriotex Info: Registering variant font greciliae-hollow as gre@font@v
+ariant@B. on input line 993
+Module gregoriotex Info: Registering variant font greciliae-hole as gre@font@var
+iant@C. on input line 993
+luaotfload | cache : Lookup cache loaded from /home/lucas/.texlive2019/texmf-var
+/luatex-cache/generic-dev/names/luaotfload-lookup-cache.luc.
+Module gregoriotex Info: Mapping font greciliae on input line 998
+Module gregoriotex Info: Mapping font greciliae-hollow on input line 998
+Module gregoriotex Info: Mapping font greciliae-hole on input line 998
+
+(/usr/share/texlive/texmf-dist/tex/luatex/gregoriotex/gregoriotex-chars.tex
+\gre@box@hep=\box53
+)
+(/usr/share/texlive/texmf-dist/tex/luatex/gregoriotex/gregoriotex-signs.tex
+\gre@box@temp@clef=\box54
+\gre@box@temp@cleftwo=\box55
+\greslurheight=\dimen195
+\gre@box@temp@sign=\box56
+\gre@count@shiftaftermora=\count311
+\gre@dimen@morawidth=\dimen196
+\gre@skip@bar@lastskip=\skip70
+\gre@count@lastglyphiscavum=\count312
+)
+(/usr/share/texlive/texmf-dist/tex/luatex/gregoriotex/gregoriotex-syllable.tex
+\gre@generate@pointandclick=\count313
+\gre@box@syllablenotes=\box57
+\gre@box@syllabletext=\box58
+\gre@clivisalignment=\count314
+\gre@count@unbreakabletotalnotes=\count315
+\gre@count@unbreakableinitialnotes=\count316
+\gre@count@unbreakablefinalnotes=\count317
+\gre@count@syllablenotes=\count318
+)
+\gre@variableheightexpansion=\count319
+\gre@lastoflinecount=\count320
+\gre@nobreakpenaltysave=\count321
+\gre@endofwordpenaltysave=\count322
+\gre@endofsyllablepenaltysave=\count323
+\gre@endafterbarpenaltysave=\count324
+\gre@endafterbaraltpenaltysave=\count325
+\gre@endofelementpenaltysave=\count326
+\gre@lasteuouaeindex=\count327
+(/usr/share/texlive/texmf-dist/tex/luatex/gregoriotex/gregoriotex-symbols.tex
+Module gregoriotex Info: Registering variant font greextra as gre@font@variant@D
+. on input line 53
+)
+(/usr/share/texlive/texmf-dist/tex/luatex/gregoriotex/gsp-default.tex)
+(/usr/share/texlive/texmf-dist/tex/luatex/gregoriotex/gregoriotex-nabc.tex)))
+(/usr/share/texlive/texmf-dist/tex/latex/titlesec/titlesec.sty
+Package: titlesec 2019/10/16 v2.13 Sectioning titles
+\ttl@box=\box59
+\beforetitleunit=\skip71
+\aftertitleunit=\skip72
+\ttl@plus=\dimen197
+\ttl@minus=\dimen198
+\ttl@toksa=\toks19
+\titlewidth=\dimen199
+\titlewidthlast=\dimen256
+\titlewidthfirst=\dimen257
+)
+(/usr/share/texlive/texmf-dist/tex/latex/romande/romande.sty
+Package: romande 2010/06/27 v2.1 romande
+
+(/usr/share/texlive/texmf-dist/tex/latex/xkeyval/xkeyval.sty
+Package: xkeyval 2014/12/03 v2.7a package option processing (HA)
+
+(/usr/share/texlive/texmf-dist/tex/generic/xkeyval/xkeyval.tex
+(/usr/share/texlive/texmf-dist/tex/generic/xkeyval/xkvutils.tex
+\XKV@toks=\toks20
+\XKV@tempa@toks=\toks21
+)
+\XKV@depth=\count328
+File: xkeyval.tex 2014/12/03 v2.7a key=value parser (HA)
+))
+(/usr/share/texlive/texmf-dist/tex/latex/base/fontenc.sty
+Package: fontenc 2020/02/11 v2.0o Standard LaTeX package
+LaTeX Font Info:    Trying to load font information for T1+lmr on input line 112
+.
+
+(/usr/share/texmf/tex/latex/lm/t1lmr.fd
+File: t1lmr.fd 2009/10/30 v1.6 Font defs for Latin Modern
+))
+(/usr/share/texlive/texmf-dist/tex/latex/base/textcomp.sty
+Package: textcomp 2020/02/02 v2.0n Standard LaTeX package
+)
+(/usr/share/texlive/texmf-dist/tex/latex/nfssext-cfr/nfssext-cfr.sty
+(/usr/share/texlive/texmf-dist/tex/latex/svn-prov/svn-prov.sty
+Package: svn-prov 2010/04/24 v3.1862 Package Date/Version from SVN Keywords
+)
+Package: nfssext-cfr 2017/03/28 (SVN Rev: 6140){} specially mangled by cfr; base
+d on 2003/03/14 v1.2 Experimental NFSS Extensions
+
+(/usr/share/texlive/texmf-dist/tex/latex/base/ifthen.sty
+Package: ifthen 2014/09/29 v1.1c Standard LaTeX ifthen package (DPC)
+)
+\c@taken=\count329
+LaTeX Info: Redefining \itshape on input line 515.
+LaTeX Info: Redefining \scshape on input line 523.
+LaTeX Info: Redefining \upshape on input line 537.
+LaTeX Info: Redefining \swshape on input line 544.
+LaTeX Info: Redefining \textsw on input line 553.
+))
+(/usr/share/texlive/texmf-dist/tex/latex/base/fontenc.sty
+Package: fontenc 2020/02/11 v2.0o Standard LaTeX package
+LaTeX Font Info:    Trying to load font information for T1+yrd on input line 112
+.
+
+(/usr/share/texlive/texmf-dist/tex/latex/romande/t1yrd.fd
+File: t1yrd.fd 2010/07/10 Fontinst v1.933 font definitions for T1/yrd.
+))
+(/usr/share/texlive/texmf-dist/tex/latex/fontspec/fontspec.sty
+(/usr/share/texlive/texmf-dist/tex/latex/l3packages/xparse/xparse.sty
+(/usr/share/texlive/texmf-dist/tex/latex/l3kernel/expl3.sty
+Package: expl3 2020-02-14 L3 programming layer (loader) 
+
+(/usr/share/texlive/texmf-dist/tex/latex/l3backend/l3backend-pdfmode.def
+File: l3backend-pdfmode.def 2020-02-03 L3 backend support: PDF mode
+\l__kernel_color_stack_int=\count330
+\l__pdf_internal_box=\box60
+))
+Package: xparse 2020-02-14 L3 Experimental document command parser
+\l__xparse_current_arg_int=\count331
+\g__xparse_grabber_int=\count332
+\l__xparse_m_args_int=\count333
+\l__xparse_v_nesting_int=\count334
+)
+Package: fontspec 2020/02/03 v2.7h Font selection for XeLaTeX and LuaLaTeX
+Lua module: fontspec 2020/02/03 2.7h Font selection for XeLaTeX and LuaLaTeX
+(/usr/share/texlive/texmf-dist/tex/latex/fontspec/fontspec-luatex.sty
+Package: fontspec-luatex 2020/02/03 v2.7h Font selection for XeLaTeX and LuaLaTe
+X
+\l__fontspec_script_int=\count335
+\l__fontspec_language_int=\count336
+\l__fontspec_strnum_int=\count337
+\l__fontspec_tmp_int=\count338
+\l__fontspec_tmpa_int=\count339
+\l__fontspec_tmpb_int=\count340
+\l__fontspec_tmpc_int=\count341
+\l__fontspec_em_int=\count342
+\l__fontspec_emdef_int=\count343
+\l__fontspec_strong_int=\count344
+\l__fontspec_strongdef_int=\count345
+\l__fontspec_tmpa_dim=\dimen258
+\l__fontspec_tmpb_dim=\dimen259
+\l__fontspec_tmpc_dim=\dimen260
+
+(/usr/share/texlive/texmf-dist/tex/latex/base/fontenc.sty
+Package: fontenc 2020/02/11 v2.0o Standard LaTeX package
+)
+(/usr/share/texlive/texmf-dist/tex/latex/fontspec/fontspec.cfg)))
+(/usr/share/texlive/texmf-dist/tex/latex/fancyhdr/fancyhdr.sty
+Package: fancyhdr 2019/01/31 v3.10 Extensive control of page headers and footers
+
+\f@nch@headwidth=\skip73
+\f@nch@O@elh=\skip74
+\f@nch@O@erh=\skip75
+\f@nch@O@olh=\skip76
+\f@nch@O@orh=\skip77
+\f@nch@O@elf=\skip78
+\f@nch@O@erf=\skip79
+\f@nch@O@olf=\skip80
+\f@nch@O@orf=\skip81
+)
+(/usr/share/texlive/texmf-dist/tex/latex/initials/Nouveaud.fd
+File: Nouveaud.fd 2003/04/02 Font definition file for U/Nouveaud
+)
+(/usr/share/texlive/texmf-dist/tex/generic/babel/babel.sty
+Package: babel 2020/02/14 3.40 The Babel package
+
+(/usr/share/texlive/texmf-dist/tex/generic/babel/switch.def
+File: switch.def 2020/02/14 3.40 Babel switching mechanism
+)
+(/usr/share/texlive/texmf-dist/tex/generic/babel/luababel.def
+\bbl@readstream=\read3
+\l@dumylang=\language2
+Package babel Info: Non-standard hyphenation setup on input line 117.
+\l@nohyphenation=\language3
+\l@mongolianlmc=\language4
+\l@esperanto=\language5
+\l@russian=\language6
+\l@portuguese=\language7
+\l@interlingua=\language8
+\l@belarusian=\language9
+\l@galician=\language10
+\l@ibycus=\language11
+\l@ukenglish=\language12
+\l@catalan=\language13
+\l@italian=\language14
+\l@assamese=\language15
+\l@irish=\language16
+\l@german=\language17
+\l@lithuanian=\language18
+\l@pali=\language19
+\l@sanskrit=\language20
+\l@farsi=\language21
+\l@ethiopic=\language22
+\l@ngerman=\language23
+\l@ukrainian=\language24
+\l@romansh=\language25
+\l@panjabi=\language26
+\l@piedmontese=\language27
+\l@greek=\language28
+\l@danish=\language29
+\l@czech=\language30
+\l@slovak=\language31
+\l@latvian=\language32
+\l@mongolian=\language33
+\l@usenglishmax=\language34
+\l@georgian=\language35
+\l@polish=\language36
+\l@estonian=\language37
+\l@liturgicallatin=\language38
+\l@uppersorbian=\language39
+\l@dutch=\language40
+\l@croatian=\language41
+\l@occitan=\language42
+\l@bengali=\language43
+\l@slovenian=\language44
+\l@kurmanji=\language45
+\l@icelandic=\language46
+\l@ngerman-x-2019-04-04=\language47
+\l@kannada=\language48
+\l@turkish=\language49
+\l@classiclatin=\language50
+\l@french=\language51
+\l@hindi=\language52
+\l@hungarian=\language53
+\l@malayalam=\language54
+\l@arabic=\language55
+\l@coptic=\language56
+\l@monogreek=\language57
+\l@latin=\language58
+\l@indonesian=\language59
+\l@tamil=\language60
+\l@nynorsk=\language61
+\l@thai=\language62
+\l@telugu=\language63
+\l@friulan=\language64
+\l@bulgarian=\language65
+\l@swissgerman=\language66
+\l@serbian=\language67
+\l@churchslavonic=\language68
+\l@marathi=\language69
+\l@pinyin=\language70
+\l@basque=\language71
+\l@romanian=\language72
+\l@gujarati=\language73
+\l@spanish=\language74
+\l@bokmal=\language75
+\l@serbianc=\language76
+\l@oriya=\language77
+\l@welsh=\language78
+\l@swedish=\language79
+\l@afrikaans=\language80
+\l@finnish=\language81
+\l@ancientgreek=\language82
+\l@german-x-2019-04-04=\language83
+\l@turkmen=\language84
+\l@armenian=\language85
+)
+(/usr/share/texlive/texmf-dist/tex/generic/babel-latin/latin.ldf
+Language: latin 2015/08/20 v.3.5 Latin support from the babel system
+
+(/usr/share/texlive/texmf-dist/tex/generic/babel/babel.def
+File: babel.def 2020/02/14 3.40 Babel common definitions
+\babel@savecnt=\count346
+\U@D=\dimen261
+
+(/usr/share/texlive/texmf-dist/tex/generic/babel/luababel.def
+\bbl@attr@locale=\attribute13
+))
+Package babel Info: Making " an active character on input line 188.
+
+(/usr/share/texlive/texmf-dist/tex/generic/hyph-utf8/loadhyph/loadhyph-la.tex
+UTF-8 Latin hyphenation patterns
+(/usr/share/texlive/texmf-dist/tex/generic/hyph-utf8/patterns/tex/hyph-la.tex)))
+)
+
+Package fontspec Info: Could not resolve font "coelacanth/BI" (it probably
+(fontspec)             doesn't exist).
+
+
+Package fontspec Info: Font family 'coelacanth(0)' created for font
+(fontspec)             'coelacanth' with options [Ligatures=TeX].
+(fontspec)              
+(fontspec)              This font family consists of the following NFSS
+(fontspec)             series/shapes:
+(fontspec)              
+(fontspec)             - 'normal' (m/n) with NFSS spec.:
+(fontspec)             <->"coelacanth:mode=node;script=latn;language=dflt;+tlig;
+"
+(fontspec)             - 'small caps'  (m/sc) with NFSS spec.:
+(fontspec)             <->"coelacanth:mode=node;script=latn;language=dflt;+tlig;
++smcp;"
+(fontspec)             - 'bold' (b/n) with NFSS spec.:
+(fontspec)             <->"coelacanth/B:mode=node;script=latn;language=dflt;+tli
+g;"
+(fontspec)             - 'bold small caps'  (b/sc) with NFSS spec.:
+(fontspec)             <->"coelacanth/B:mode=node;script=latn;language=dflt;+tli
+g;+smcp;"
+(fontspec)             - 'italic' (m/it) with NFSS spec.:
+(fontspec)             <->"coelacanth/I:mode=node;script=latn;language=dflt;+tli
+g;"
+(fontspec)             - 'italic small caps'  (m/scit) with NFSS spec.:
+(fontspec)             <->"coelacanth/I:mode=node;script=latn;language=dflt;+tli
+g;+smcp;"
+
+ (./small-mass-parts.aux)
+\openout1 = small-mass-parts.aux
+
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 50.
+LaTeX Font Info:    ... okay on input line 50.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 50.
+LaTeX Font Info:    ... okay on input line 50.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 50.
+LaTeX Font Info:    ... okay on input line 50.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 50.
+LaTeX Font Info:    ... okay on input line 50.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 50.
+LaTeX Font Info:    Trying to load font information for TS1+cmr on input line 50
+.
+
+(/usr/share/texlive/texmf-dist/tex/latex/base/ts1cmr.fd
+File: ts1cmr.fd 2019/12/16 v2.5j Standard LaTeX font definitions
+)
+LaTeX Font Info:    ... okay on input line 50.
+LaTeX Font Info:    Checking defaults for TU/lmr/m/n on input line 50.
+LaTeX Font Info:    ... okay on input line 50.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 50.
+LaTeX Font Info:    ... okay on input line 50.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 50.
+LaTeX Font Info:    ... okay on input line 50.
+
+*geometry* driver: auto-detecting
+*geometry* detected driver: luatex
+*geometry* verbose mode - [ preamble ] result:
+* driver: luatex
+* paper: a4paper
+* layout: <same size as paper>
+* layoutoffset:(h,v)=(0.0pt,0.0pt)
+* modes: 
+* h-part:(L,W,R)=(89.62709pt, 418.25368pt, 89.6271pt)
+* v-part:(T,H,B)=(101.40665pt, 591.5302pt, 152.11pt)
+* \paperwidth=597.50787pt
+* \paperheight=845.04684pt
+* \textwidth=418.25368pt
+* \textheight=591.5302pt
+* \oddsidemargin=17.3571pt
+* \evensidemargin=17.3571pt
+* \topmargin=-7.86334pt
+* \headheight=12.0pt
+* \headsep=25.0pt
+* \topskip=12.0pt
+* \footskip=30.0pt
+* \marginparwidth=35.0pt
+* \marginparsep=10.0pt
+* \columnsep=10.0pt
+* \skip\footins=10.8pt plus 4.0pt minus 2.0pt
+* \hoffset=0.0pt
+* \voffset=0.0pt
+* \mag=1000
+* \@twocolumnfalse
+* \@twosidefalse
+* \@mparswitchfalse
+* \@reversemarginfalse
+* (1in=72.27pt=25.4mm, 1cm=28.453pt)
+
+(/usr/share/texlive/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
+[Loading MPS to PDF converter (version 2006.09.02).]
+\scratchcounter=\count347
+\scratchdimen=\dimen262
+\scratchbox=\box61
+\nofMPsegments=\count348
+\nofMParguments=\count349
+\everyMPshowfont=\toks22
+\MPscratchCnt=\count350
+\MPscratchDim=\dimen263
+\MPnumerator=\count351
+\makeMPintoPDFobject=\count352
+\everyMPtoPDFconversion=\toks23
+) (/usr/share/texlive/texmf-dist/tex/latex/epstopdf-pkg/epstopdf-base.sty
+Package: epstopdf-base 2020-01-24 v2.11 Base part for package epstopdf
+
+(/usr/share/texlive/texmf-dist/tex/generic/infwarerr/infwarerr.sty
+Package: infwarerr 2019/12/03 v1.5 Providing info/warning/error messages (HO)
+)
+(/usr/share/texlive/texmf-dist/tex/latex/grfext/grfext.sty
+Package: grfext 2019/12/03 v1.3 Manage graphics extensions (HO)
+
+(/usr/share/texlive/texmf-dist/tex/generic/kvdefinekeys/kvdefinekeys.sty
+Package: kvdefinekeys 2019-12-19 v1.6 Define keys (HO)
+))
+(/usr/share/texlive/texmf-dist/tex/latex/pdftexcmds/pdftexcmds.sty
+Package: pdftexcmds 2019/11/24 v0.31 Utility functions of pdfTeX for LuaTeX (HO)
+
+Package pdftexcmds Info: \pdf@primitive is available.
+Package pdftexcmds Info: \pdf@ifprimitive is available.
+Package pdftexcmds Info: \pdfdraftmode found.
+\pdftexcmds@toks=\toks24
+)
+Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 48
+5.
+Package grfext Info: Graphics extension search list:
+(grfext)             [.pdf,.png,.jpg,.mps,.jpeg,.jbig2,.jb2,.PDF,.PNG,.JPG,.JPEG
+,.JBIG2,.JB2,.eps]
+(grfext)             \AppendGraphicsExtensions on input line 504.
+
+(/usr/share/texlive/texmf-dist/tex/latex/latexconfig/epstopdf-sys.cfg
+File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Live
+
+))
+
+Package fontspec Info: Adjusting the maths setup (use [no-math] to avoid
+(fontspec)             this).
+
+\symlegacymaths=\mathgroup4
+LaTeX Font Info:    Overwriting symbol font `legacymaths' in version `bold'
+(Font)                  OT1/cmr/m/n --> OT1/cmr/bx/n on input line 50.
+LaTeX Font Info:    Redeclaring math accent \acute on input line 50.
+LaTeX Font Info:    Redeclaring math accent \grave on input line 50.
+LaTeX Font Info:    Redeclaring math accent \ddot on input line 50.
+LaTeX Font Info:    Redeclaring math accent \tilde on input line 50.
+LaTeX Font Info:    Redeclaring math accent \bar on input line 50.
+LaTeX Font Info:    Redeclaring math accent \breve on input line 50.
+LaTeX Font Info:    Redeclaring math accent \check on input line 50.
+LaTeX Font Info:    Redeclaring math accent \hat on input line 50.
+LaTeX Font Info:    Redeclaring math accent \dot on input line 50.
+LaTeX Font Info:    Redeclaring math accent \mathring on input line 50.
+LaTeX Font Info:    Redeclaring math symbol \colon on input line 50.
+LaTeX Font Info:    Redeclaring math symbol \Gamma on input line 50.
+LaTeX Font Info:    Redeclaring math symbol \Delta on input line 50.
+LaTeX Font Info:    Redeclaring math symbol \Theta on input line 50.
+LaTeX Font Info:    Redeclaring math symbol \Lambda on input line 50.
+LaTeX Font Info:    Redeclaring math symbol \Xi on input line 50.
+LaTeX Font Info:    Redeclaring math symbol \Pi on input line 50.
+LaTeX Font Info:    Redeclaring math symbol \Sigma on input line 50.
+LaTeX Font Info:    Redeclaring math symbol \Upsilon on input line 50.
+LaTeX Font Info:    Redeclaring math symbol \Phi on input line 50.
+LaTeX Font Info:    Redeclaring math symbol \Psi on input line 50.
+LaTeX Font Info:    Redeclaring math symbol \Omega on input line 50.
+LaTeX Font Info:    Redeclaring math symbol \mathdollar on input line 50.
+LaTeX Font Info:    Redeclaring symbol font `operators' on input line 50.
+LaTeX Font Info:    Encoding `OT1' has changed to `TU' for symbol font
+(Font)              `operators' in the math version `normal' on input line 50.
+LaTeX Font Info:    Overwriting symbol font `operators' in version `normal'
+(Font)                  OT1/cmr/m/n --> TU/coelacanth(0)/m/n on input line 50.
+LaTeX Font Info:    Encoding `OT1' has changed to `TU' for symbol font
+(Font)              `operators' in the math version `bold' on input line 50.
+LaTeX Font Info:    Overwriting symbol font `operators' in version `bold'
+(Font)                  OT1/cmr/bx/n --> TU/coelacanth(0)/m/n on input line 50.
+LaTeX Font Info:    Overwriting symbol font `operators' in version `normal'
+(Font)                  TU/coelacanth(0)/m/n --> TU/coelacanth(0)/m/n on input l
+ine 50.
+LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `normal'
+(Font)                  OT1/cmr/m/it --> TU/coelacanth(0)/m/it on input line 50.
+
+LaTeX Font Info:    Overwriting math alphabet `\mathbf' in version `normal'
+(Font)                  OT1/cmr/bx/n --> TU/coelacanth(0)/b/n on input line 50.
+LaTeX Font Info:    Overwriting math alphabet `\mathsf' in version `normal'
+(Font)                  OT1/cmss/m/n --> TU/lmss/m/n on input line 50.
+LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `normal'
+(Font)                  OT1/cmtt/m/n --> TU/lmtt/m/n on input line 50.
+LaTeX Font Info:    Overwriting symbol font `operators' in version `bold'
+(Font)                  TU/coelacanth(0)/m/n --> TU/coelacanth(0)/b/n on input l
+ine 50.
+LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `bold'
+(Font)                  OT1/cmr/bx/it --> TU/coelacanth(0)/b/it on input line 50
+.
+LaTeX Font Info:    Overwriting math alphabet `\mathsf' in version `bold'
+(Font)                  OT1/cmss/bx/n --> TU/lmss/b/n on input line 50.
+LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `bold'
+(Font)                  OT1/cmtt/m/n --> TU/lmtt/b/n on input line 50.
+
+(./scores/Alleluia-5_2_1.gtex
+Underfull \hbox (badness 10000) in paragraph at lines 76--10
+
+ []
+
+Inserting `gregoriotex.post_linebreak' at position 1 in `post_linebreak_filter'.
+Inserting `gregoriotex.disable_hyphenation' at position 1 in `hyphenate'.
+
+LaTeX Font Warning: Font shape `TU/coelacanth(0)/b/it' undefined
+(Font)              using `TU/coelacanth(0)/b/n' instead on input line 11.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 10--129
+ []  [][][] [][][] [][][][] [][][] [][][] [] [] []  [][][] [][][][] [][][] [][]
+[] [] [] [] []  [][][] [][][] [][][] [][][] [] [] [][] 
+ []
+
+Removing  `gregoriotex.post_linebreak' from `post_linebreak_filter'.
+Removing  `gregoriotex.disable_hyphenation' from `hyphenate'.)
+Module gregoriotex Info: scores/Memorial-Acclamation.gabc has been modified and 
+scores/Memorial-Acclamation-5_2_1.gtex needs to be updated. Recompiling the gabc
+ file. on input line 97
+Module gregoriotex Info: compiling the score scores/Memorial-Acclamation.gabc...
+ on input line 97
+Module gregoriotex Info: will use gregorio on input line 97
+ (./scores/Memorial-Acclamation-5_2_1.gtex
+Underfull \hbox (badness 10000) in paragraph at lines 84--7
+
+ []
+
+Inserting `gregoriotex.post_linebreak' at position 1 in `post_linebreak_filter'.
+Inserting `gregoriotex.disable_hyphenation' at position 1 in `hyphenate'.
+Underfull \hbox (badness 10000) in paragraph at lines 7--183
+ [] [][] [][][] [][][][][][] [][][] [][][] [][][] [][][] []  [][][] [][][] [][]
+[][]
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 7--183
+[][][][] [][][] [][][][][][][][][] []  [][][][][][] [][][] [][][] [][][][][][] 
+[] [][] 
+ []
+
+Removing  `gregoriotex.post_linebreak' from `post_linebreak_filter'.
+Removing  `gregoriotex.disable_hyphenation' from `hyphenate'.) (./scores/Doxolo
+gy-5_2_1.gtex
+Underfull \hbox (badness 10000) in paragraph at lines 100--7
+
+ []
+
+Inserting `gregoriotex.post_linebreak' at position 1 in `post_linebreak_filter'.
+Inserting `gregoriotex.disable_hyphenation' at position 1 in `hyphenate'.
+Underfull \hbox (badness 2600) in paragraph at lines 7--361
+[][][][] [][][] [][][] [][][] [][][] [][][] [][][] [][][] [][][] [][][] [][][] 
+[] []  [][][] [][][] [][][] [][][] [][][][][][] [][][] [][][] [] []
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 7--361
+[][][][] [][][] [][][] [][][] [][][] [][][] [] [][]  [][][][][][][] [] [][] 
+ []
+
+Removing  `gregoriotex.post_linebreak' from `post_linebreak_filter'.
+Removing  `gregoriotex.disable_hyphenation' from `hyphenate'.) [1
+
+{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}]
+(./small-mass-parts.aux)
+
+LaTeX Font Warning: Some font shapes were not available, defaults substituted.
+
+)
+
+Here is how much of LuaTeX's memory you used:
+ 25210 strings out of 481365
+ 100000,794899 words of node,token memory allocated
+ 1310 words of node memory still in use:
+   18 hlist, 3 vlist, 9 rule, 1 local_par, 12 glue, 14 kern, 7 penalty, 8 glyph,
+ 145 attribute, 74 glue_spec, 27 attribute_list, 1 write, 1 user_defined, 4 pdf_
+colorstack nodes
+   avail lists: 2:8633,3:810,4:208,5:1205,6:105,7:1217,8:3,9:1450,10:9,11:7
+ 41854 multiletter control sequences out of 65536+600000
+ 51 fonts using 12658843 bytes
+ 43i,5n,78p,673b,354s stack positions out of 5000i,500n,10000p,200000b,100000s
+Module gregoriotex Info: Writing small-mass-parts.gaux on input line 0
+Module gregoriotex Warning: Line heights or variable brace lengths may have chan
+ged. Rerun to fix. on input line 0
+</usr/share/texlive/texmf-dist/fonts/truetype/public/gregoriotex/greextra.ttf></
+usr/share/texlive/texmf-dist/fonts/truetype/public/gregoriotex/greciliae.ttf></u
+sr/share/texlive/texmf-dist/fonts/opentype/public/coelacanth/CoelacanthBold.otf>
+</usr/share/texlive/texmf-dist/fonts/opentype/public/coelacanth/Coelacanth.otf><
+/usr/share/texlive/texmf-dist/fonts/type1/public/initials/Nouveaud.pfb>
+Output written on small-mass-parts.pdf (1 page, 34670 bytes).
+
+PDF statistics: 40 PDF objects out of 1000 (max. 8388607)
+ 23 compressed objects within 1 object stream
+ 0 named destinations out of 1000 (max. 131072)
+ 1 words of extra memory for PDF output out of 10000 (max. 100000000)
+

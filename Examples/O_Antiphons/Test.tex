@@ -1,0 +1,118 @@
+% !TEX TS-program = LuaLaTeX+se
+% !TEX encoding = UTF-8
+
+\documentclass[12pt]{article}
+
+\usepackage[autocompile]{gregoriotex}
+\usepackage{fullpage}
+\usepackage{libertine}
+\usepackage[latin]{babel}
+
+%%% This function is used at the end of a function which inserts text.  It checks to see if a space should be included at the end of the command, suppressing it if the command is immediately followed by a punctuation character but including it otherwise.
+\makeatletter
+\newcommand{\punctuationcheck}{%
+	\@ifnextchar){\relax}{%
+	\@ifnextchar]{\relax}{%
+	\@ifnextchar.{\relax}{%
+	\@ifnextchar,{\relax}{%
+	\@ifnextchar’{\relax}{\ }}}}}%
+}
+\makeatother
+
+%%%  Code for ordinal numbers.  Note that this code redefines \th to make it produce the superscripted "th" for ordinal numbers and so defines a new command, \thorn, to allow access to the phonetic letter which is usually accessed by that command.
+\newcommand{\st}{\textsuperscript{st}\punctuationcheck}
+\newcommand{\nd}{\textsuperscript{nd}\punctuationcheck}
+\newcommand{\rd}{\textsuperscript{rd}\punctuationcheck}
+\let\thorn\th
+\renewcommand{\th}{\textsuperscript{th}\punctuationcheck}
+
+\gresethyphen{force}
+
+\grechangestyle{initial}{%
+\fontsize{43}{43}\selectfont}%
+
+\grechangestyle{annotation}{\scshape\bfseries\small}
+
+\def\move{\rule[-0.2em]{0.4pt}{1em}\,}
+
+\begin{document}
+\title{O Antiphons}
+\author{}
+\date{}
+\maketitle
+
+\section*{O Wisdom (December 17\th)}
+\gregorioscore{Scores/O_Sapientia}
+
+\section*{O Lord (December 18\th)}
+\gregorioscore{Scores/O_Adonai}
+
+\section*{O Root of Jesse (December 19\th)}
+\gregorioscore{Scores/O_radix_Jesse}
+
+\section*{O Key of David (December 20\th)}
+\gregorioscore{Scores/O_clavis_David}
+
+\section*{O Rising Sun (December 21\st)}
+\gregorioscore{Scores/O_Oriens}
+
+\section*{O King of Nations (December 22\nd)}
+\gregorioscore{Scores/O_Rex_gentium}
+
+\section*{O Emmanuel (December 23\rd)}
+\gregorioscore{Scores/O_Emmanuel}
+
+\clearpage
+\greseteolcustos{manual}
+\gresetinitiallines{0}
+\section*{Magnificat Tone with Text}
+\gregorioscore{Scores/Mag_Tone}
+
+\renewcommand{\labelitemi}{\Vbar}
+\makeatletter
+\newcommand{\tick}[1][0pt]{%
+\raise 0.8em\hbox to 0pt{\kern #1\gre@font@music\GreCPAccentus\hss}%
+}
+\makeatother
+\begin{itemize}
+\item Magníficat * ánima me-\move a Dóminum.
+
+\item Et exsultávit {\move }spíritus \tick[0.7em]meus *\\
+in Deo salutá-{\move }ri meo. 
+
+\item Quia respéxit humiltátem {\move }ancíll{\ae} \tick[0.5em]su{\ae}: *\\
+ecce enim ex hoc beátam me dicent omnes genera-{\move }tiónes. 
+
+\item Quia fecit mihi {\move }magna qui \tick[0.6em]potens est: *\\
+et sanctum no-{\move }men ejus. 
+
+\item Et misericórdia ejus a progéni-{\move }e in prog\tick[0.1em]énies *\\
+timénti-{\move }bus eum. 
+
+\item Fecit poténtiam in {\move }bráchio \tick[0.6em]suo: *\\
+dispérsit supérbos mente cor-{\move }dis sui. 
+
+\item Depósuit po-{\move }téntes de \tick[0.5em]sede, *\\
+et exaltá-{\move }vit húmiles. 
+
+\item Esuriéntes {\move }implévit \tick[0.6em]bonis: *\\
+et dívites dimísit {\move }inánes. 
+
+\item Suscépit Israel, {\move }púerum \tick[0.6em]suum, *\\
+recordátus misericórdi-{\move\ae} su{\ae}. 
+
+\item Sicut locútus est {\move }ad patres \tick[0.6em]nostros, *\\
+Abraham, et sémini ejus {\move }in s{\'\ae}cula. 
+
+\item Glória {\move }Patri, et \tick[0.5em]Fílio, *\\
+et Spirítu-{\move }i Sancto. 
+
+\item Sicut erat in principío, {\move }et nunc, et \tick[0.5em]semper, *\\
+et in s{\'\ae}cula s{\ae}culó-{\move }rum. Amen. 
+\end{itemize}
+
+
+\section*{Magnificat Full Out}
+\gregorioscore{Scores/Magnificat}
+
+\end{document}

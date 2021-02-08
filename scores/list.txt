@@ -31,6 +31,7 @@ O-Lumen-Ecclesiae.gabc
 Pange-Lingua-5_2_1.glog
 Pange-Lingua-5_2_1.gtex
 Pange-Lingua.gabc
+Salve-Regina-Dominican.gabc
 Salve-Regina-Simple-Tone-5_2_1.glog
 Salve-Regina-Simple-Tone-5_2_1.gtex
 Salve-Regina-Simple-Tone.gabc

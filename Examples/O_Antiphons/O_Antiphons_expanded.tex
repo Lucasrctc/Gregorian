@@ -1,0 +1,99 @@
+% !TEX TS-program = LuaLaTeX+se
+% !TEX encoding = UTF-8
+
+\documentclass[11pt]{article} % use larger type; default would be 10pt
+
+\usepackage[autocompile]{gregoriotex}
+\usepackage{fullpage}
+\usepackage{libertine}
+\usepackage[latin]{babel}
+
+%%% This function is used at the end of a function which inserts text.  It checks to see if a space should be included at the end of the command, suppressing it if the command is immediately followed by a punctuation character but including it otherwise.
+\makeatletter
+\newcommand{\punctuationcheck}{%
+	\@ifnextchar){\relax}{%
+	\@ifnextchar]{\relax}{%
+	\@ifnextchar.{\relax}{%
+	\@ifnextchar,{\relax}{%
+	\@ifnextchar’{\relax}{\ }}}}}%
+}
+\makeatother
+
+%%%  Code for ordinal numbers.  Note that this code redefines \th to make it produce the superscripted "th" for ordinal numbers and so defines a new command, \thorn, to allow access to the phonetic letter which is usually accessed by that command.
+\newcommand{\st}{\textsuperscript{st}\punctuationcheck}
+\newcommand{\nd}{\textsuperscript{nd}\punctuationcheck}
+\newcommand{\rd}{\textsuperscript{rd}\punctuationcheck}
+\let\thorn\th
+\renewcommand{\th}{\textsuperscript{th}\punctuationcheck}
+
+\def\move{\rule[-0.2em]{0.4pt}{1em}\,}
+
+\gresethyphen{force}
+
+\grechangedim{afterinitialshift}{2.2mm}{scalable}
+\grechangedim{beforeinitialshift}{2.2mm}{scalable}
+
+\grechangestyle{initial}{%
+\fontsize{40}{40}\selectfont}%
+
+\grechangestyle{annotation}{\scshape\bfseries\small}
+
+\grechangestaffsize{15}
+
+\begin{document}
+\section*{O Wisdom (December 17\th)}
+\gregorioscore{Scores/O_Sapientia}
+\vspace{1.5cm}\gresetinitiallines{0}
+\gregorioscore{Scores/Magnificat}
+\gresetinitiallines{1}\vspace{1.5cm}
+\gregorioscore{Scores/O_Sapientia}
+
+\clearpage
+\section*{O Lord (December 18\th)}
+\gregorioscore{Scores/O_Adonai}
+\vspace{1.5cm}\gresetinitiallines{0}
+\gregorioscore{Scores/Magnificat}
+\gresetinitiallines{1}\vspace{1.5cm}
+\gregorioscore{Scores/O_Adonai}
+
+\clearpage
+\section*{O Root of Jesse (December 19\th)}
+\gregorioscore{Scores/O_radix_Jesse}
+\vspace{1.5cm}\gresetinitiallines{0}
+\gregorioscore{Scores/Magnificat}
+\gresetinitiallines{1}\vspace{1.5cm}
+\gregorioscore{Scores/O_radix_Jesse}
+
+\clearpage
+\section*{O Key of David (December 20\th)}
+\gregorioscore{Scores/O_clavis_David}
+\vspace{1.5cm}\gresetinitiallines{0}
+\gregorioscore{Scores/Magnificat}
+\gresetinitiallines{1}\vspace{1.5cm}
+\gregorioscore{Scores/O_clavis_David}
+
+\clearpage
+\section*{O Rising Sun (December 21\st)}
+\gregorioscore{Scores/O_Oriens}
+\vspace{1.5cm}\gresetinitiallines{0}
+\gregorioscore{Scores/Magnificat}
+\gresetinitiallines{1}\vspace{1.5cm}
+\gregorioscore{Scores/O_Oriens}
+
+\clearpage
+\section*{O King of Nations (December 22\nd)}
+\gregorioscore{Scores/O_Rex_gentium}
+\vspace{1.5cm}\gresetinitiallines{0}
+\gregorioscore{Scores/Magnificat}
+\gresetinitiallines{1}\vspace{1.5cm}
+\gregorioscore{Scores/O_Rex_gentium}
+
+\clearpage
+\section*{O Emmanuel (December 23\rd)}
+\gregorioscore{Scores/O_Emmanuel}
+\vspace{1.5cm}\gresetinitiallines{0}
+\gregorioscore{Scores/Magnificat}
+\gresetinitiallines{1}\vspace{1.5cm}
+\gregorioscore{Scores/O_Emmanuel}
+
+\end{document}
