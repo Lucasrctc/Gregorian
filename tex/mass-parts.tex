@@ -1,0 +1,173 @@
+% !TEX TS-program = LuaLaTex+se
+\documentclass[12pt, a4paper]{article}
+
+
+%\usepackage[showframe]{geometry}
+\usepackage{geometry}
+\usepackage{layout}
+\usepackage[autocompile,allowdeprecated=false]{gregoriotex}
+\usepackage[compact]{titlesec}
+\usepackage{graphicx}
+
+\usepackage{romande}
+\usepackage[T1]{fontenc}
+\usepackage{fontspec}
+\usepackage{fancyhdr}
+\input Nouveaud.fd
+\newcommand*\initfamily{\usefont{U}{Nouveaud}{xl}{n}}
+
+% choose the language of the document here
+\usepackage[latin]{babel}
+
+
+%%% This function is used at the end of a function which inserts text.  It checks to see if a space should be included at the end of the command, suppressing it if the command is immediately followed by a punctuation character but including it otherwise.
+\makeatletter
+\newcommand{\punctuationcheck}{%
+	\@ifnextchar){\relax}{%
+	\@ifnextchar]{\relax}{%
+	\@ifnextchar.{\relax}{%
+	\@ifnextchar,{\relax}{%
+	\@ifnextchar’{\relax}{\ }}}}}%
+}
+\makeatother
+
+% tune distances
+\grechangedim{afterinitialshift}{2.2mm}{scalable}
+\grechangedim{beforeinitialshift}{2.2mm}{scalable}
+\grechangedim{annotationraise}{8pt}{scalable}
+\setmainfont{coelacanth}
+% format the initial
+\grechangestyle{initial}{\initfamily\fontsize{50}{33}\selectfont}
+% select the font for the music and tune the glyphs
+
+% prevents linebreaks mid-word
+\xdef\greendofsyllablepenalty{10000}
+% red staff lines
+\gresetlinecolor{gregoriocolor}
+
+% For getting rid of the images in black and white printing
+
+\begin{document}
+%\layout
+
+\setlength{\parindent}{0cm}
+\setlength{\footskip}{.25in}
+\setlength{\textheight}{800pt}
+\setlength{\textwidth}{420pt}
+\setlength{\hoffset}{0pt}
+\setlength{\headheight}{0pt}
+\setlength{\voffset}{-0.75in}
+\setlength{\headsep}{5pt}
+
+\begin{center}
+	\begin{huge}
+		\textsc{Mass Parts}
+	\end{huge}
+\end{center}
+
+\begin{huge}
+	\textsc
+	{
+%		\\
+%		Introit\\
+		Kyrie
+%		Gloria\\
+%		Alleluia
+	}
+\end{huge}
+\noindent
+\\
+\gresetlastline{justified}
+\gresetlinecolor{gregoriocolor}%
+\gregorioscore{scores/Kyrie-XVI}%
+\begin{huge}
+	\noindent
+	\\
+	\textsc
+	{
+%		\\
+%		Introit\\
+%		Kyrie\\
+%		Gloria\\
+		Alleluia
+	}
+\end{huge}
+\noindent
+\\
+\gresetlastline{justified}
+\gresetlinecolor{gregoriocolor}%
+\gregorioscore{scores/Alleluia}%
+\begin{huge}
+	\noindent
+	\\
+	\textsc
+	{
+		Holy
+	}
+\end{huge}
+\\
+\gresetlastline{justified}
+\gresetlinecolor{gregoriocolor}%
+\gregorioscore{scores/Holy}
+
+\begin{huge}
+	\noindent
+	\\
+	\textsc
+	{
+%		Credo\\
+%		Offertory\\
+%		Sanctus\\
+		Memorial Aclamation
+	}
+\end{huge}
+\\
+\gresetlastline{justified}
+\gresetlinecolor{gregoriocolor}%
+\gregorioscore{scores/Memorial-Acclamation}
+
+\begin{huge}
+	\noindent
+	\\
+	\textsc{Amen}
+\end{huge}
+\\
+\noindent%
+\gresetlastline{justified}
+\gresetlinecolor{gregoriocolor}%
+\gregorioscore{scores/Doxology}
+
+\begin{huge}
+	\noindent
+	\\
+	\textsc{Lamb of God}
+\end{huge}
+\\
+\noindent%
+\gresetlastline{justified}
+\gresetlinecolor{gregoriocolor}%
+\gregorioscore{scores/Lamb-of-God}
+
+\newpage
+
+\begin{huge}
+	\noindent
+	\\
+	\textsc{Gloria}
+\end{huge}
+\\
+\noindent%
+\gresetlastline{justified}
+\gresetlinecolor{gregoriocolor}%
+\gregorioscore{scores/GloriaEnglish}
+%\begin{huge}
+%	\textsc
+%	{
+%		\\
+%		Our Father\\
+%		Agnus Dei\\
+%		Communion\\
+%		Recessional
+%	}
+%\end{huge}
+\end{document}
